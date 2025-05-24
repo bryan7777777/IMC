@@ -16,11 +16,13 @@ function main() {
     let genero1 = document.getElementById("genero").value.toLowerCase();
 
     let result = peso / (altura * altura);
+    let pesoIdeal = 22 * (altura * altura);
     
     // ANÁLISE IMC
     if (result < 18.5) {
         document.getElementById("seuPeso").innerText = 'Abaixo do normal';
         document.getElementById("imc").innerText = result.toFixed(2);
+        document.getElementById("PesoIdeal").innerHTML = pesoIdeal.toFixed(2);
         document.getElementById("riscos").innerText = 'Deficiências nutricionais, baixa imunidade, perda de massa muscular, fadiga.';
         document.getElementById("recomendacoes").innerText = 'Aumentar a ingestão calórica com alimentos nutritivos (castanhas, abacate, azeite, ovos).';
         document.getElementById("recomendacoes1").innerText = 'Fazer refeições frequentes e balanceadas.';
@@ -29,6 +31,7 @@ function main() {
     } else if (result < 24.9) {
         document.getElementById("seuPeso").innerText = 'Normal';
         document.getElementById("imc").innerText = result.toFixed(2);
+        document.getElementById("PesoIdeal").innerHTML = pesoIdeal.toFixed(2);
         document.getElementById("riscos").innerText = 'Menores riscos de doenças crônicas.';
         document.getElementById("recomendacoes").innerText = 'Manter uma alimentação equilibrada com frutas, legumes, proteínas e grãos integrais.';
         document.getElementById("recomendacoes1").innerText = 'Praticar atividade física regularmente (150 minutos por semana).';
@@ -37,6 +40,7 @@ function main() {
     } else if (result < 29.9) {
         document.getElementById("seuPeso").innerText = 'Sobrepeso';
         document.getElementById("imc").innerText = result.toFixed(2);
+        document.getElementById("PesoIdeal").innerHTML = pesoIdeal.toFixed(2);
         document.getElementById("riscos").innerText = 'Aumento do risco de doenças cardiovasculares, diabetes tipo 2, hipertensão.';
         document.getElementById("recomendacoes").innerText = 'Reduzir o consumo de calorias, especialmente de açúcares e gorduras saturadas.';
         document.getElementById("recomendacoes1").innerText = 'Aumentar a prática de exercícios aeróbicos e de força.';
@@ -45,6 +49,7 @@ function main() {
     } else if (result < 34.9) {
         document.getElementById("seuPeso").innerText = 'Obesidade grau I';
         document.getElementById("imc").innerText = result.toFixed(2);
+        document.getElementById("PesoIdeal").innerHTML = pesoIdeal.toFixed(2);
         document.getElementById("riscos").innerText = 'Alto risco de doenças crônicas, problemas articulares, apneia do sono, entre outros.';
         document.getElementById("recomendacoes").innerText = 'Adotar uma dieta hipocalórica supervisionada por nutricionista.';
         document.getElementById("recomendacoes1").innerText = 'Praticar atividade física adaptada à condição física.';
@@ -53,6 +58,7 @@ function main() {
     } else {
         document.getElementById("seuPeso").innerText = 'Obesidade grau II-III';
         document.getElementById("imc").innerText = result.toFixed(2);
+        document.getElementById("PesoIdeal").innerHTML = pesoIdeal.toFixed(2);
         document.getElementById("riscos").innerText = 'Alto risco de doenças crônicas, problemas articulares, apneia do sono, entre outros.';
         document.getElementById("recomendacoes").innerText = 'Adotar uma dieta hipocalórica supervisionada por nutricionista.';
         document.getElementById("recomendacoes1").innerText = 'Praticar atividade física adaptada à condição física.';
