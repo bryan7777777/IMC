@@ -8,6 +8,7 @@
     <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -27,8 +28,8 @@
                 abaixo do peso, peso normal, sobrepeso e obesidade.</p>
             <p>
                 Ao inserir seus dados no site, você receberá uma análise rápida para entender sua situação e, se
-                necessário, buscar orientações para melhorar sua saúde. Lembre-se de que esse cálculo é apenas uma
-                referência e não substitui uma avaliação médica mais detalhada!</p>
+                necessário, buscar orientações para melhorar sua saúde. <span class="enfase">Lembre-se de que esse cálculo é apenas uma
+                referência e não substitui uma avaliação médica mais detalhada!</span></p>
         </div>
         <form action="" id="infoUsuario">
             <h1 id="formH1">Calcule seu peso aqui!</h1>
@@ -46,7 +47,7 @@
                     <input type="text" class="txtUser1" id="genero" placeholder="Masculino / Feminino">
                 </div>
             </div>
-            <input type="button" id="button" value="Clique aqui para calcular!" onclick="main();">
+            <a href="#tabela"><input type="button" id="button" value="Clique aqui para calcular!" onclick="main();"></a>
             <div id="tabela">
                 <div class="bloco">
                 <div id="tabela__infos">
@@ -89,7 +90,12 @@
     </main>
     <!-- FOOTER -->
     <footer>
-
+        <div class="itens">
+            <p id="creditos">© 2025 Criado por Bryan Nagano. Estrutura, estilo e script.</p>
+        </div>
+        <div class="itens">
+            <a href="https://github.com/bryan7777777" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
     </footer>
 </body>
 

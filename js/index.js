@@ -98,7 +98,13 @@ function main() {
             imglink2 = "./img/mulheres/mSobrePeso.png";
         }
     } else {
-        alert('Erro, valor inválido na caixa "Gênero", as imagens não serão carregadas.');
+        alert('Erro, valor inválido na caixa "Informe seu genero", as imagens e os dados sobre seu IMC não serão carregadas. Verifique sua resposta!');
+        reset = document.getElementsByClassName("tabela__infos");
+    for (let i = 0; i < reset.length; i++) {reset[i].innerText = "";}
+    resetImg = document.getElementById("imgPeso");
+    resetImg.innerHTML = "";
+    resetImg2 = document.getElementById("imgPeso2");
+    resetImg2.innerHTML = "";
     }
 
     let img1 = document.createElement("img");
