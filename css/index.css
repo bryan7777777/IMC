@@ -83,6 +83,14 @@ main{
     box-shadow: #212121 2px 2px 6px;
 }
 
+#generos{
+    background-color: #FFCC80;
+    border-radius: 10px;
+    border: solid #eeb258;
+    text-align: center;
+    height: 100%;
+}
+
 #txtUser{
     display: flex;
     gap: 50px;
@@ -187,7 +195,7 @@ input{
 }
 
 /* HOVER-MAIN */
-#button:hover, #peso:hover, #altura:hover, #genero:hover{
+#button:hover, #peso:hover, #altura:hover, #generos:hover{
     background-color: #e68e0b;
 }
 
