@@ -322,4 +322,16 @@ main{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+p, label, input{
+    font-size: 150%;
+}
+
+h1{
+    font-size: 180%;
+}
+
+#creditos{
+    font-size: 120%;
+}
 }
