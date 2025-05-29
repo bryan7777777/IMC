@@ -13,7 +13,7 @@ function main() {
     // CAPTURA DE DADOS
     let peso = Number(document.getElementById("peso").value);
     let altura = Number(document.getElementById("altura").value);
-    let genero1 = document.getElementById("genero").value.toLowerCase();
+    let genero1 = document.getElementById("generos").value.toLowerCase();
 
     let result = peso / (altura * altura);
     let pesoIdeal = 22 * (altura * altura);
